@@ -1,0 +1,24 @@
+﻿Build started 10/08/2018 11:37:41 CH.
+     1>Project "C:\Users\Pham\Documents\Visual Studio 2012\Projects\Client\Client\Client.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt tcp.cpp
+         tcp.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Pham\Documents\Visual Studio 2012\Projects\Client\Debug\Client.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Pham\Documents\Visual Studio 2012\Projects\Client\Debug\Client.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Pham\Documents\Visual Studio 2012\Projects\Client\Debug\Client.lib" /MACHINE:X86 Debug\Controller.obj
+         Debug\Main.obj
+         Debug\Model.obj
+         Debug\tcp.obj
+         Debug\View.obj
+         sqlite3.obj
+         sqlite3.obj : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+     1>LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
+     1>Controller.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
+     1>LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+         Generating code
+         Finished generating code
+         Client.vcxproj -> C:\Users\Pham\Documents\Visual Studio 2012\Projects\Client\Debug\Client.exe
+     1>Done Building Project "C:\Users\Pham\Documents\Visual Studio 2012\Projects\Client\Client\Client.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:19.08
