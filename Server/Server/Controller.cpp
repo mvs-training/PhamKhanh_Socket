@@ -27,10 +27,10 @@ void Controller::SignUp(char username[],char password[],char birthday[],char ful
 		system("pause");
 	}
 }
-void Controller::SignIn(char username[],char password[]) {
+char Controller::SignIn(char username[],char password[]) {
 	
 
-	
+	char c;
 	Model conn;
 	conn.Open();
 	if (conn.SQL_login(conn.db,username,password)>0) {
@@ -38,12 +38,14 @@ void Controller::SignIn(char username[],char password[]) {
 		id = conn.SQL_login(conn.db, username, password);
 		check = true;
 		zID = id;
+		return c ='t';
 	}
 	else {
 		cout << "Login fail!\n";
 		check = false;
-		getch();
+		return c ='f';
 	}
+
 }
 void Controller::SignOut() {
 	check = false;

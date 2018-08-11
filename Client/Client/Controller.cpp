@@ -36,7 +36,6 @@ void Controller::SignUp() {
 	tcp3.tcp_send(birthday);
 	cout << "Fullname:";
 	fflush(stdin);
-	cin.ignore(1);
     cin.getline(fullname,30);
 	tcp3.tcp_send(fullname);
 	cout << "Address:";
@@ -62,22 +61,12 @@ void Controller::SignIn() {
 	password = new char;
 
 	cout << "username: ";
+	fflush(stdin);
 	cin >> username;
 	tcp3.tcp_send(username);
-	while (true)
-	{
-		cout << "password: ";
-		cin >> password;
-		if(sizeof(password) > 2)
-		{
-			break;
-		}
-		else
-		{
-			cout<<"Password must have least 3 characters\n";
-		}
-	}
-	
+	cout << "password: ";
+	fflush(stdin);
+	cin >> password;
 	tcp3.tcp_send(password);
 	Model conn;
 	conn.Open();

@@ -25,8 +25,9 @@ DWORD WINAPI tcpip_recv(LPVOID arg){
 
 int main()
 {
-	view1.choose_menu();
 	HANDLE hThread1 = CreateThread(NULL, 0, tcpip_recv, NULL, 0, NULL);
+	view1.choose_menu();
+	
 
 	WaitForSingleObject(hThread1, INFINITE);
 	CloseHandle(hThread1);

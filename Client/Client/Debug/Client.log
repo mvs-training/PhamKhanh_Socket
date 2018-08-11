@@ -1,4 +1,4 @@
-﻿Build started 10/08/2018 11:37:41 CH.
+﻿Build started 11/08/2018 11:50:35 SA.
      1>Project "C:\Users\Pham\Documents\Visual Studio 2012\Projects\Client\Client\Client.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt tcp.cpp
@@ -21,4 +21,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:19.08
+Time Elapsed 00:00:18.34

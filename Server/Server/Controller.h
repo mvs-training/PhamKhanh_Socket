@@ -17,7 +17,7 @@ public:
 public:
 	void SignUp(char username[],char password[],char birthday[],char fullname[],char sex[],char address[] );
 	public:
-	void SignIn(char username[],char password[]);
+	char SignIn(char username[],char password[]);
 	void SingUp();
 	void SignOut();
 	void ShowMess_send(int);

@@ -101,17 +101,18 @@ int tcp::tcp_send(char buff[])
 	printf("Error! Cannot send mesage.");
 
 	//Receive echo message
-	ret = recv(client, buff, BUFF_SIZE, 0);
+	char buff1[BUFF_SIZE];
+	ret = recv(client, buff1, BUFF_SIZE, 0);
 	if(ret == SOCKET_ERROR)
 	{
 		if (WSAGetLastError() == WSAETIMEDOUT)
 			printf("Time-out!");
 		
 	}
-	else if (strlen(buff) > 0)
+	else if (strlen(buff1) > 0)
 	{
-	buff[ret] = 0;
-	printf("Receive from server[%s:%d] %s\n",inet_ntoa(serverAddr.sin_addr), ntohs(serverAddr.sin_port),buff);
+	buff1[ret] = 0;
+	printf("Receive from server[%s:%d] %s\n",inet_ntoa(serverAddr.sin_addr), ntohs(serverAddr.sin_port),buff1);
 	}
 	
 	//Step 6: Close socket
